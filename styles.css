@@ -12,6 +12,11 @@ html {
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 }
 
+body {
+  color: #ffffff;
+}
+
 .main-page {
   font-family: 'Quicksand';
+
 }
