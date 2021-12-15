@@ -16,6 +16,11 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
 .message-type-box {
   background-color: #ffffff;
   color: #000000;
