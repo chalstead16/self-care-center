@@ -23,7 +23,6 @@ h1 {
 h3 {
   text-align: center;
   padding-top: 70px;
-  padding-bottom: 10px;
 }
 
 .message-type-box {
@@ -33,6 +32,13 @@ h3 {
   border-radius: 15px;
   width: 500px;
   text-align: center;
+  padding: 10px;
+  font-style: italic;
+}
+
+.message-type-inputs {
+  padding-bottom: 15px;
+
 }
 
 .message-type-box-button {
