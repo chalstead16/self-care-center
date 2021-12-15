@@ -17,12 +17,10 @@ body {
 }
 
 h1 {
-  margin: auto;
   text-align: center;
 }
 
 h3 {
-  margin: auto;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 10px;
@@ -37,6 +35,10 @@ h3 {
   text-align: center;
 }
 
-button {
+.message-type-box-button {
   font-family: 'Quicksand', sans-serif;
+  margin: auto;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
 }
