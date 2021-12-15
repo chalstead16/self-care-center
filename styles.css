@@ -36,6 +36,7 @@ h3 {
 }
 
 .message-type-box-button {
+  display: block;
   font-family: 'Quicksand', sans-serif;
   margin: auto;
   border-radius: 15px;
