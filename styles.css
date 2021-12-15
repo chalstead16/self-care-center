@@ -18,5 +18,9 @@ body {
 
 .main-page {
   font-family: 'Quicksand';
+}
 
+.message-type-box {
+  background-color: #ffffff;
+  color: #000000;
 }
