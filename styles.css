@@ -6,18 +6,14 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
-
 html {
-  height: 100%;
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  height: 100%;
 }
 
 body {
   color: #ffffff;
-}
-
-.main-page {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
 }
 
 .message-type-box {
@@ -27,4 +23,8 @@ body {
   border-radius: 15px;
   width: 500px;
   text-align: center;
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
 }
