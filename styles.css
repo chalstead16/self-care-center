@@ -23,4 +23,7 @@ body {
 .message-type-box {
   background-color: #ffffff;
   color: #000000;
+  margin: auto;
+  border-radius: 15px;
+  width: 500px;
 }
