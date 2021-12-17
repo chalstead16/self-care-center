@@ -34,18 +34,31 @@ var mantras = [
 ];
 
 //query selector variables go here
+// var affirmation = document.querySelector('.affirmation-input').clicked;
 var messageButton = document.querySelector('.message-type-box-button');
-var buddahImg = document.querySelector('.buddah-img');
+var buddha = document.querySelector('#buddha');
 
 
 //event listeners
 messageButton.addEventListener('click', hideBuddah);
 
 //functions and event handlers
-function hideBuddah() {
-  buddahImg.classList.add('hidden')
+//function for random message
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
 }
 
+function hideBuddah(event) {
+  event.preventDefault();
+  buddha.classList.toggle('hidden');
+}
 
-
-//function for random message
+// function showAffirmation () {
+//
+//   if (affirmation === true) {
+//     buddahImgContainer.innerHTML += `
+//     <section class="affirmation-message">
+//     <p>${affirmations[i]}</p>
+//     </section>`
+//   }
+// }
