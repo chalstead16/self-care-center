@@ -34,9 +34,18 @@ var mantras = [
 ];
 
 //query selector variables go here
+var messageButton = document.querySelector('.message-type-box-button');
+var buddahImg = document.querySelector('.buddah-img');
+
 
 //event listeners
+messageButton.addEventListener('click', hideBuddah);
 
 //functions and event handlers
+function hideBuddah() {
+  buddahImg.classList.add('hidden')
+}
+
+
 
 //function for random message
