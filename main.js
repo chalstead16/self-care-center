@@ -34,13 +34,15 @@ var mantras = [
 ];
 
 //query selector variables go here
-// var affirmation = document.querySelector('.affirmation-input').clicked;
+var affirmation = document.querySelector('.affirmation-input');
 var messageButton = document.querySelector('.message-type-box-button');
-var buddha = document.querySelector('#buddha');
+var messageContainer = document.querySelector('.buddah-container');
+var buddha = document.querySelector('.buddha');
+
 
 
 //event listeners
-messageButton.addEventListener('click', hideBuddah);
+messageButton.addEventListener('click', showAffirmation);
 
 //functions and event handlers
 //function for random message
@@ -48,17 +50,15 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-function hideBuddah(event) {
-  event.preventDefault();
-  buddha.classList.toggle('hidden');
+function hideBuddah() {
+  buddha.classList.add('hidden');
 }
 
-// function showAffirmation () {
-//
-//   if (affirmation === true) {
-//     buddahImgContainer.innerHTML += `
-//     <section class="affirmation-message">
-//     <p>${affirmations[i]}</p>
-//     </section>`
-//   }
-// }
+function showAffirmation() {
+  hideBuddah();
+  messageContainer.innerHTML =``;
+  if(affirmation.checked){
+    messageContainer.innerHTML += `
+    <p>${affirmations[getRandomIndex(affirmations)]}</p>`
+  }
+}
